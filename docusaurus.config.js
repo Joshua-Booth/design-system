@@ -53,7 +53,25 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Overview',
+          },
+          {
+            type: 'doc',
+            docId: 'foundations',
+            position: 'left',
+            label: 'Foundations',
+          },
+          {
+            type: 'doc',
+            docId: 'components',
+            position: 'left',
+            label: 'Components',
+          },
+          {
+            type: 'doc',
+            docId: 'patterns',
+            position: 'left',
+            label: 'Patterns',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -71,7 +89,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/overview/intro',
               },
             ],
           },
