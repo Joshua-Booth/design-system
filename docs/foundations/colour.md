@@ -1,5 +1,3 @@
 ---
 title: Colour
 ---
-
-Hello world

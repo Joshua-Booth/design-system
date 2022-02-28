@@ -1,5 +1,0 @@
----
-title: Foundations
----
-
-Hello world
