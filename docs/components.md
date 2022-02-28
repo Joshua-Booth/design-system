@@ -1,5 +1,0 @@
----
-title: Components
----
-
-Hello world

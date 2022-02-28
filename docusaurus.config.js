@@ -1,39 +1,40 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Design System',
-  tagline: 'Great UX is cool',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'Joshua-Booth', // Usually your GitHub org/user name.
-  projectName: 'design-system', // Usually your repo name.
+  title: "Design System",
+  tagline: "Great UX is cool",
+  url: "https://your-docusaurus-test-site.com",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "Joshua-Booth", // Usually your GitHub org/user name.
+  projectName: "design-system", // Usually your repo name.
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: 'https://github.com/joshua-booth/design-system/tree/master/docs',
+          editUrl:
+            "https://github.com/joshua-booth/design-system/tree/master/docs",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/joshua-booth/design-system/tree/master/blog',
+            "https://github.com/joshua-booth/design-system/tree/master/blog",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -43,83 +44,83 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Design System',
+        title: "Design System",
         logo: {
-          alt: 'Design System Logo',
-          src: 'img/logo.svg',
+          alt: "Design System Logo",
+          src: "img/logo.svg",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Overview',
+            type: "doc",
+            docId: "intro",
+            position: "left",
+            label: "Overview",
           },
           {
-            type: 'doc',
-            docId: 'foundations',
-            position: 'left',
-            label: 'Foundations',
+            to: "docs/foundations",
+            docId: "foundations",
+            position: "left",
+            label: "Foundations",
           },
           {
-            type: 'doc',
-            docId: 'components',
-            position: 'left',
-            label: 'Components',
+            to: "docs/components",
+            docId: "components",
+            position: "left",
+            label: "Components",
           },
           {
-            type: 'doc',
-            docId: 'patterns',
-            position: 'left',
-            label: 'Patterns',
+            to: "docs/patterns",
+            docId: "patterns",
+            position: "left",
+            label: "Patterns",
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: "/blog", label: "Blog", position: "left" },
           {
-            href: 'https://github.com/Joshua-Booth/design-system',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/Joshua-Booth/design-system",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro/',
+                label: "Tutorial",
+                to: "/docs/intro/",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: "Stack Overflow",
+                href: "https://stackoverflow.com/questions/tagged/docusaurus",
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: "Discord",
+                href: "https://discordapp.com/invite/docusaurus",
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: "Twitter",
+                href: "https://twitter.com/docusaurus",
               },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: "Blog",
+                to: "/blog",
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/Joshua-Booth/design-system',
+                label: "GitHub",
+                href: "https://github.com/Joshua-Booth/design-system",
               },
             ],
           },
